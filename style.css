@@ -1,28 +1,31 @@
 /* RESET */
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* GENERAL */
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: "Amatic SC", sans-serif;
     background-color: #eef5f5;
     overflow-x: hidden;
 }
 
-
+/* ========================= */
 /* NAVBAR */
+/* ========================= */
 
-.navbar{
+.navbar {
     width: 100%;
     padding: 20px 70px;
 
@@ -31,47 +34,42 @@ body{
     align-items: center;
 }
 
-
-.logo-container{
+.logo-container {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-
-.logo{
+.logo {
     width: 100px;
 }
 
-
-.logo-text{
+.logo-text {
     font-size: 3rem;
     font-weight: 700;
 }
 
-
-.nav-links{
+.nav-links {
     display: flex;
     gap: 60px;
 }
 
-
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     color: black;
     font-size: 2.3rem;
     transition: 0.3s;
 }
 
-
-.nav-links a:hover{
+.nav-links a:hover {
     color: #00b7b7;
 }
 
-
+/* ========================= */
 /* HERO */
+/* ========================= */
 
-.hero{
+.hero {
     min-height: 100vh;
 
     display: flex;
@@ -84,163 +82,189 @@ body{
     background-repeat: no-repeat;
 }
 
-
-.hero-content{
+.hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-
-.hero-character{
+.hero-character {
     width: 620px;
 }
 
-
-.upload-btn{
+.upload-btn {
     text-decoration: none;
 
     border: 3px solid #00b7b7;
-
     padding: 15px 40px;
-
     border-radius: 50px;
 
     color: black;
-
     font-size: 2rem;
 
     transition: 0.3s;
 }
 
-
-.upload-btn:hover{
+.upload-btn:hover {
     background-color: #00b7b7;
     color: white;
 }
 
-.about-section{
+/* ========================= */
+/* ABOUT */
+/* ========================= */
 
+.about-section {
     min-height: 70vh;
 
     padding: 100px 120px;
 
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
 
     text-align: center;
 }
 
-
-.about-section h2{
-
+.about-section h2 {
     font-size: 4.5rem;
-
     margin-bottom: 40px;
 }
 
-
-.about-section p{
-
+.about-section p {
     max-width: 900px;
-
     font-size: 2rem;
-
     line-height: 1.5;
 }
-
 
 /* ========================= */
 /* MATERIAS */
 /* ========================= */
 
-.subjects{
-
+.subjects {
     min-height: 100vh;
-
     padding: 30px 50px;
 }
 
-
-/* GRID */
-
-.subjects-grid{
-
+.subjects-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 15px;
 }
 
-
-/* CARDS */
-
-.subject-card{
-
+.subject-card {
     background-color: #fdfdfd;
-
     border: 2px solid #00b7b7;
-
     border-radius: 30px;
 
     min-height: 190px;
 
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
 
     gap: 20px;
 
     transition: 0.3s;
-
     cursor: pointer;
 }
 
-
-.subject-card:hover{
-
+.subject-card:hover {
     transform: translateY(-8px);
-
     background-color: #f2ffff;
 }
 
-
-/* IMAGENES */
-
-.subject-card img{
-
+.subject-card img {
     width: 120px;
-
     object-fit: contain;
 }
 
-
-/* TEXTO */
-
-.subject-card h3{
-
+.subject-card h3 {
     font-size: 3rem;
-
     text-align: center;
-
     line-height: 1;
 }
 
-
-/* CARDS GRANDES */
-
-.large-card{
-
+.large-card {
     grid-column: span 1;
-
     min-height: 190px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .hero-character {
+        width: 450px;
+    }
+
+    .about-section {
+        padding: 80px 40px;
+    }
+
+    .subjects {
+        padding: 30px;
+    }
+
+    .subjects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .logo-text {
+        font-size: 2.2rem;
+    }
+
+    .hero-character {
+        width: 280px;
+    }
+
+    .upload-btn {
+        font-size: 1.5rem;
+        padding: 12px 25px;
+        text-align: center;
+    }
+
+    .subjects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .subject-card h3 {
+        font-size: 2rem;
+    }
+
+    .about-section h2 {
+        font-size: 3rem;
+    }
+
+    .about-section p {
+        font-size: 1.5rem;
+    }
 }
