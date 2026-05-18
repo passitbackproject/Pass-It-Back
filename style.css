@@ -244,3 +244,67 @@ body{
 
     min-height: 190px;
 }
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    nav{
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .hero{
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 40px 20px;
+    }
+
+    .hero-text h1{
+
+        font-size: 4rem;
+    }
+
+    .hero-text p{
+
+        font-size: 1.6rem;
+    }
+
+    .hero-character{
+
+        width: 300px;
+    }
+
+    .subjects{
+
+        padding: 40px 20px;
+    }
+
+    .subjects-grid{
+
+        grid-template-columns: 1fr;
+    }
+
+    .subject-card{
+
+        min-height: 180px;
+    }
+
+    .subject-card img{
+
+        width: 80px;
+    }
+
+    .subject-card h3{
+
+        font-size: 2rem;
+    }
+}
