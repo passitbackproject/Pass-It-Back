@@ -11,32 +11,33 @@
         gap: 20px;
     }
 
-    .nav-links{
 
-        gap: 25px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
 
     .logo-text{
 
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
-   .hero{
+    .nav-links{
 
-    text-align: center;
+    gap: 15px;
 
-    padding: 40px 20px;
+    flex-wrap: wrap;
 
-    background-size: contain;
-
-    background-repeat: no-repeat;
-
-    background-position: top;
+    justify-content: center;
 }
+
+.nav-links a{
+
+    font-size: 1.5rem;
+}
+
+    .hero{
+
+        text-align: center;
+        
+        padding: 40px 20px;
+    }
 
     .hero-character{
 
