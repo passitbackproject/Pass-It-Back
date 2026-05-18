@@ -9,24 +9,24 @@
     flex-direction: column;
 
     gap: 20px;
- }
+}
 
- .logo-container{
+.logo-container{
 
     flex-direction: column;
 
     text-align: center;
- }
+}
 
- .logo{
+.logo{
 
     width: 70px;
- }
+}
 
- .logo-text{
+.logo-text{
 
     font-size: 2rem;
- }
+}
 
  .nav-links{
 
